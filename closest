@@ -1,0 +1,3 @@
+function getParentByClass(item, parentClass) {
+	return item.parentNode.classList.contains(parentClass) ? item.parentNode : getParentByClass(item.parentNode, parentClass);
+}
